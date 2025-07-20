@@ -33,7 +33,6 @@ function frequency(pitch){
 function handle() {
     audioCtx.resume();
     gainNode.gain.value = 0;
-    frequency(input.value);
     var usernotes = String(input.value);
     frequency(notenames.get(usernotes));
 }
